@@ -434,75 +434,63 @@ h1{
     color: #ffffff;
 }
 
-@media (max-width: 900px){
-    .hero-info{
-        grid-template-columns: 1fr;
-    }
-
-    .image{
-        max-width: 640px;
-    }
-
-    .work-section{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .project-view{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+.about-section{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 32px 0;
+    scroll-margin-top: 24px;
 }
 
-@media (max-width: 600px){
-    main{
-        padding-bottom: 0;
-    }
+.about-section-info{
+    min-width: 0;
+}
 
-    header{
-        height: auto;
-        min-height: 70px;
-        flex-wrap: wrap;
-        gap: 12px;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
+.about-section-image{
+    min-width: 0;
+}
 
-    .left-side{
-        margin-right: auto;
-    }
+.about-image{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.72;
+    border-radius: 12px;
+    object-fit: cover;
+}
 
-    .middle-side{
-        order: 3;
-        flex-basis: 100%;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        font-size: 15px;
-    }
+.about-section .span-projects{
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding: 3px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
 
-    .hero-info{
-        min-height: calc(100vh - 128px);
-        min-height: calc(100svh - 128px);
-    }
+.about-title{
+    margin-bottom: 8px;
+    max-width: 380px;
+    font-size: clamp(25px, 2.3vw, 34px);
+    line-height: 1.2;
+}
 
-    .modern-stack{
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 24px 0;
-    }
+.about-description,
+.description2{
+    max-width: 390px;
+    margin-bottom: 8px;
+    font-size: clamp(14px, 1.1vw, 16px);
+    line-height: 1.6;
+}
 
-    .stack-image{
-        width: 100%;
-    }
+.description2{
+    margin-bottom: 25px;
+}
 
-    .work-section{
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .section{
-        min-height: 0;
-        padding: 22px;
-    }
-
-    .project-view{
-        grid-template-columns: minmax(0, 1fr);
-    }
+.about-section .start-project{
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
 }
