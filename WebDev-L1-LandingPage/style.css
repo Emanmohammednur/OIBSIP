@@ -281,26 +281,26 @@ h1{
     transform: translateY(-4px);
 }
 
-.icon-image{
+.icon-images{
     display: grid;
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     place-items: center;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
     padding: 11px;
-    border: 1px solid rgb(92 67 255 / 35%);
     border-radius: 14px;
-    background-color: rgb(48 4 220 / 14%);
 }
 
-.icon{
+.icons{
     display: block;
+    object-fit: cover;
+    object-position: center;
     width: 100%;
 }
 
 .number{
-    margin-bottom: 8px;
-    color: #a99cff;
+    margin-bottom: 5px;
+    color: #a3a6b9;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -316,7 +316,32 @@ h1{
 .section-description{
     color: #a3a6b9;
     font-size: 15px;
-    line-height: 1.65;
+    line-height: 1.8;
+}
+
+.work .work-section{
+    gap: 0;
+}
+
+.work .section{
+    min-height: 0;
+    align-items: flex-start;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    text-align: left;
+    transition: none;
+}
+
+
+
+.work .section:not(:last-child){
+    border-right: 2px solid #100245;
+}
+
+.work .section:hover{
+    transform: none;
 }
 
 .project-part{
