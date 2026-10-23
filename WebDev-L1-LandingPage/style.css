@@ -145,7 +145,6 @@ h1{
     font-size: 20px;
     font-weight: 500;
     border-radius:10px;
-    
     transition: background-color 0.3s ease;
 }
 
@@ -214,6 +213,7 @@ h1{
     min-width: 0;
     height: clamp(120px, 12vw, 220px);
     overflow: hidden;
+
 }
 .stack{
     width: 100%;
@@ -340,10 +340,8 @@ h1{
     transition: none;
 }
 
-
-
 .work .section:not(:last-child){
-    border-right: 2px solid #100245;
+    border-right: 1px solid #061A40;
 }
 
 .work .section:hover{
@@ -543,14 +541,14 @@ about-section-info{
 
 .stat {
     text-align: center;
-    border-right: 2px solid #100245;
+    border-right: 1px solid #061A40;
 }
 .stat:last-child {
     border-right: none;
 }
 .impact-number{
     font-size: 45px;
-    color:#3004dc;
+    color:whitesmoke
 
 }
 .impact-description{
@@ -615,3 +613,143 @@ about-section-info{
     font-size: 18px;
 }
 
+.call-to-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:40px;
+}
+.call-to-action-title{
+    margin-top: 10px;
+    font-size: 32px;
+
+}
+.call-to-action-description{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 480px;
+    color: #a3a6b9;
+
+}
+.call-to-action-description2{
+    font-size: 20px;
+    width: 480px;
+    color: #a3a6b9;
+    padding-left: 160px;
+    margin-bottom: 60px;
+
+}
+.contact-detail-section{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 50px;
+
+}
+.call-to-action-image{
+    width: 500px;
+
+}
+.call-image{
+    width: 100%;
+}
+
+.email-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.location-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+} 
+.contact-title{
+    font-size: 32px;
+}
+.contact-description{
+    color: #a3a6b9;
+    font-size: 18px;
+}
+.address-image{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+
+}
+.address-logo{
+    width: 100%;
+}
+.email{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #a3a6b9;
+    
+}
+.location-address{
+    margin-left: 10px;
+    font-size: 1p6x;
+    color: #a3a6b9;
+}
+.follow-us-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 190px;
+}
+.follow{
+    margin: 0;
+    font-size: 20px;
+    color: #a3a6b9;
+}
+.follow-page{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.app-image{
+    display: grid;
+    width: 24px;
+    height: 24px;
+    place-items: center;
+}
+.logo{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* .instagram-logo{
+    fill: none;
+    stroke: #e8edff;
+    stroke-width: 2;
+}
+.instagram-dot{
+    fill: #e8edff;
+    stroke: none;
+} */
+.contact-section-image{
+    position: absolute;
+    top: 80%;
+    right: 0;
+    width: clamp(480px, 24vw, 300px);
+    transform: translateY(-50%);
+}
+.tech-nova{
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.75;
+    border: 1px solid rgb(48 48 127 / 65%);
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-section{
+    position: relative;
+    padding-right: clamp(200px, 27vw, 320px);
+}
