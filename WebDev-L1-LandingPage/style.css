@@ -191,8 +191,12 @@ h1{
     flex: 0 0 25%;
     font-size: clamp(16px, 1.4vw, 25px);
     line-height: 1.3;
+    color: white;
+}
+.stack-span{
     color: #0505c2;
 }
+
 
 .tech-stack{
     font-size: 34px;
