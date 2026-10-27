@@ -1,29 +1,24 @@
 # Oasis Infobyte Web Development Internship
 
-Welcome to my internship portfolio. This repository brings together my web development assignments for the **Oasis Infobyte Internship Program (OIBSIP)**, with a focus on building clear, responsive, and user-friendly web experiences.
-
-## About
-
-I am developing my front-end skills through practical projects, applying web fundamentals to plan, build, and refine websites. Each project includes its own source files and documentation.
+A portfolio of front-end projects completed as part of the **Oasis Infobyte Internship Program (OIBSIP)**. The projects apply HTML and CSS fundamentals to create clear, responsive web experiences.
 
 ## Project
 
 ### Level 1 · Task 1 — TechNova Digital Landing Page
 
-A landing-page project for a digital solutions brand. The current project files provide the starting point for developing the page structure and visual design.
+A polished, responsive landing page for a fictional digital solutions agency. It features a sticky navigation bar, a hero section with calls to action, service and project content, testimonials, contact details, and a social/newsletter footer.
 
-| Item | Details |
-| --- | --- |
-| Project folder | [`WebDev-L1-LandingPage/`](./WebDev-L1-LandingPage/) |
-| Current status | In progress |
-| Technologies | HTML5, CSS3 |
+- **Status:** Complete
+- **Technologies:** HTML5 and CSS3
+- **Project documentation:** [WebDev-L1-LandingPage/README.md](./WebDev-L1-LandingPage/README.md)
+- **Page source:** [WebDev-L1-LandingPage/index.html](./WebDev-L1-LandingPage/index.html)
 
-## Skills in Focus
+## Skills Practiced
 
-- Semantic HTML and accessible page structure
-- CSS layout, visual hierarchy, and responsive design
-- User-focused interface development
-- Organizing and documenting project work with Git and GitHub
+- Structuring content with HTML
+- Building layouts and responsive behavior with CSS
+- Applying visual hierarchy, spacing, and consistent styling
+- Organizing project assets and documenting work
 
 ## Repository Structure
 
@@ -33,24 +28,17 @@ OIBSIP/
 └── WebDev-L1-LandingPage/
     ├── README.md
     ├── index.html
-    └── style.css
+    ├── style.css
+    └── image/
 ```
 
-## Run Locally
+## Run the Project
 
-1. Clone this repository:
+1. Clone or download this repository.
+2. Open `WebDev-L1-LandingPage/index.html` in a web browser.
+3. Optionally, open the repository in VS Code and use the Live Server extension for local preview and reloads.
 
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Open `WebDev-L1-LandingPage/index.html` in a web browser. For live reload during development, open the repository in VS Code and use the Live Server extension.
-
-## About Me
+## About
 
 **Eman Mohammednur Ahmed**  
 Web Development Intern · Oasis Infobyte Internship Program
-
----
-
-This portfolio will be updated as internship projects progress.
