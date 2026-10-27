@@ -348,7 +348,6 @@ h1 {
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-lg);
     background-color: #071126;
-
     transition:
     border-color var(--transition-fast),
     transform var(--transition-fast),
@@ -545,7 +544,7 @@ h1 {
     gap: clamp(32px, 5vw, 64px);
     padding: clamp(40px, 6vw, 80px) 0;
 }
-about-section-info {
+.about-section-info {
     min-width: 0;
 }
 
@@ -568,7 +567,7 @@ about-section-info {
     margin-bottom: 14px;
 }
 
-    .description2 {
+.description2 {
     font-size: 16px;
     color: var(--text-muted);
     line-height: 1.65;
