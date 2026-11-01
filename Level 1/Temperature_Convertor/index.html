@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#edf2e8" />
+    <meta
+      name="description"
+      content="A calm, precise temperature converter for Celsius, Fahrenheit, and Kelvin."
+    />
+    <title>Degree — Temperature, in a clearer light</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient--blue" aria-hidden="true"></div>
+    <div class="ambient ambient--lilac" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar" aria-label="Site header">
+        <a class="brand" href="#top" aria-label="Degree home">
+          <span class="brand-mark" aria-hidden="true"
+            ><svg viewBox="0 0 32 32" fill="none">
+              <path
+                d="M13 18.2V7.4a3 3 0 0 1 6 0v10.8a7 7 0 1 1-6 0Z"
+                stroke="currentColor"
+                stroke-width="2.2"
+              />
+              <path
+                d="M16 10v12.2"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+              <circle cx="16" cy="23" r="3.1" fill="currentColor" /></svg
+          ></span>
+          <span>degree<span class="brand-period">.</span></span>
+        </a>
+      </header>
+
+      <main id="main">
+        <section class="intro" id="top" aria-labelledby="page-title">
+          <div class="intro-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> TEMPERATURE, REFRAMED</p>
+            <h1 id="page-title">Every degree,<br /><span>in a clearer light.</span></h1>
+            <p class="intro-text">
+              Three scales, one steady point of view.<br class="desktop-break" />
+              Find the feeling behind the number.
+            </p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit--one"></div>
+            <div class="orbit orbit--two"></div>
+            <svg class="hero-thermometer" viewBox="0 0 150 190" fill="none">
+              <defs>
+                <linearGradient
+                  id="tube"
+                  x1="59"
+                  y1="25"
+                  x2="103"
+                  y2="154"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#D9E7C5" />
+                  <stop offset="1" stop-color="#66875E" />
+                </linearGradient>
+                <linearGradient
+                  id="mercury"
+                  x1="77"
+                  y1="75"
+                  x2="77"
+                  y2="151"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#F0D98F" />
+                  <stop offset="1" stop-color="#BD9146" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M63 101V42a14 14 0 0 1 28 0v59a34 34 0 1 1-28 0Z"
+                fill="white"
+                fill-opacity=".72"
+                stroke="url(#tube)"
+                stroke-width="5"
+              />
+              <path d="M77 65v66" stroke="url(#mercury)" stroke-width="9" stroke-linecap="round" />
+              <circle cx="77" cy="137" r="17" fill="#C69A4C" />
+              <path
+                d="m105 60 13-8M108 77h16M105 94l12 8"
+                stroke="#91A87D"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <circle cx="43" cy="49" r="4" fill="#D7E5C5" />
+              <circle cx="114" cy="131" r="3" fill="#E5C976" />
+            </svg>
+            <span class="art-caption">THE LANGUAGE<br />OF WARMTH</span
+            ><span class="art-sparkle" aria-hidden="true">✳</span>
+          </div>
+        </section>
+
+        <section class="converter" aria-label="Temperature converter">
+          <section class="input-panel" aria-labelledby="converter-title">
+            <div class="panel-heading">
+              <div class="panel-title-wrap">
+                <span class="panel-icon" aria-hidden="true"
+                  ><svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M10 13.8V5a2 2 0 1 1 4 0v8.8a4.6 4.6 0 1 1-4 0Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <path
+                      d="M12 8v9"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="18.3" r="2" fill="currentColor" /></svg
+                ></span>
+                <div>
+                  <p class="panel-kicker">THE CONVERSION DESK</p>
+                  <h2 id="converter-title">Start with a temperature</h2>
+                </div>
+              </div>
+            </div>
+            <form id="converter-form" novalidate>
+              <div class="field-row">
+                <div class="field-group temperature-field">
+                  <label for="temperature">Temperature value</label>
+                  <div class="input-wrap" id="temperature-wrap">
+                    <span class="input-glyph" aria-hidden="true">°</span
+                    ><input
+                      id="temperature"
+                      name="temperature"
+                      type="text"
+                      inputmode="decimal"
+                      autocomplete="off"
+                      placeholder="e.g. 24"
+                      aria-describedby="input-hint message"
+                    /><span class="input-unit-hint" aria-hidden="true">VALUE</span>
+                  </div>
+                </div>
+                <div class="field-group unit-field">
+                  <label for="unit">Starting scale</label>
+                  <div class="select-wrap">
+                    <select id="unit" name="unit">
+                      <option value="C">Celsius (°C)</option>
+                      <option value="F">Fahrenheit (°F)</option>
+                      <option value="K">Kelvin (K)</option></select
+                    ><svg class="select-chevron" viewBox="0 0 16 16" aria-hidden="true">
+                      <path
+                        d="m3.5 6 4.5 4 4.5-4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="form-foot">
+                <p id="input-hint" class="input-hint">
+                  <span class="hint-orbit" aria-hidden="true">↗</span> From a cool morning to a hot
+                  summer day.
+                </p>
+                <button class="convert-button" type="submit">
+                  <span>Convert temperature</span
+                  ><svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path
+                      d="M4 10h11M10 5l5 5-5 5"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <p class="message" id="message" role="status" aria-live="polite"></p>
+            </form>
+            <div class="panel-decoration" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+          </section>
+
+          <section class="results-panel" aria-labelledby="results-title">
+            <div class="results-heading">
+              <div>
+                <p class="results-kicker">ONE TEMPERATURE, THREE PERSPECTIVES</p>
+                <h2 id="results-title">Your readings</h2>
+              </div>
+              <span class="result-state" id="result-state"><span></span> AWAITING INPUT</span>
+            </div>
+            <div class="result-grid" aria-live="polite" aria-atomic="true">
+              <article class="result-card result-card--celsius" data-unit="C">
+                <div class="result-card-top">
+                  <span class="result-symbol" aria-hidden="true"
+                    ><svg viewBox="0 0 32 32" fill="none">
+                      <path
+                        d="M13 19V8a3 3 0 1 1 6 0v11a7 7 0 1 1-6 0Z"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M16 12v11"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="16" cy="23.5" r="3" fill="currentColor" /></svg></span
+                  ><span class="scale-index">01 / 03</span>
+                </div>
+                <p class="scale-name">Celsius</p>
+                <p class="scale-reading">
+                  <span class="result-value">—</span><span class="unit-mark">°C</span>
+                </p>
+                <p class="scale-note">The everyday scale</p>
+              </article>
+              <article class="result-card result-card--fahrenheit" data-unit="F">
+                <div class="result-card-top">
+                  <span class="result-symbol" aria-hidden="true"
+                    ><svg viewBox="0 0 32 32" fill="none">
+                      <path
+                        d="M12 23a7 7 0 1 0 8.5-6.8V8.5a4.5 4.5 0 0 0-9 0v2"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M16 11v10M16 14h5M16 18h4"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="16" cy="23" r="3" fill="currentColor" /></svg></span
+                  ><span class="scale-index">02 / 03</span>
+                </div>
+                <p class="scale-name">Fahrenheit</p>
+                <p class="scale-reading">
+                  <span class="result-value">—</span><span class="unit-mark">°F</span>
+                </p>
+                <p class="scale-note">A familiar forecast</p>
+              </article>
+              <article class="result-card result-card--kelvin" data-unit="K">
+                <div class="result-card-top">
+                  <span class="result-symbol" aria-hidden="true"
+                    ><svg viewBox="0 0 32 32" fill="none">
+                      <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.8" />
+                      <path
+                        d="M16 4v4M16 24v4M4 16h4M24 16h4M7.5 7.5l2.8 2.8m11.4 11.4 2.8 2.8m0-17-2.8 2.8m-11.4 11.4-2.8 2.8"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                      /></svg></span
+                  ><span class="scale-index">03 / 03</span>
+                </div>
+                <p class="scale-name">Kelvin</p>
+                <p class="scale-reading">
+                  <span class="result-value">—</span><span class="unit-mark">K</span>
+                </p>
+                <p class="scale-note">The absolute measure</p>
+              </article>
+            </div>
+            <div class="results-foot">
+              <span class="foot-sparkle" aria-hidden="true">✳</span> Every conversion respects
+              absolute zero <span class="foot-rule"></span>
+              <span class="foot-label">C · F · K</span>
+            </div>
+          </section>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <span>MEASURED IN MOMENTS</span
+        ><span
+          >Made for a world of changing weather
+          <span class="footer-sun" aria-hidden="true">☼</span></span
+        ><span>EST. FOR THE CURIOUS</span>
+      </footer>
+    </div>
+  </body>
+</html>
