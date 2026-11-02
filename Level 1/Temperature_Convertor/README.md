@@ -4,7 +4,6 @@ I built **Degree** as a simple way to convert a temperature without having to wo
 
 The interface is designed to feel calm and easy to use, with a forest backdrop and clear feedback when an entry needs attention.
 
-
 ## What it does
 
 - Converts temperatures between Celsius, Fahrenheit, and Kelvin
