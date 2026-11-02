@@ -100,3 +100,4 @@ input.addEventListener('input', () => {
 unitSelect.addEventListener('change', () => {
   if (inputWrap.classList.contains('invalid')) clearError();
 });
+
