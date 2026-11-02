@@ -28,6 +28,7 @@ A responsive landing page for a fictional digital agency, created as OIBSIP Leve
 - [Project details](./WebDev-L1-LandingPage/README.md)
 - Built with HTML and CSS
 
+
 ## Run a Project
 
 Open the linked `index.html` file in a modern web browser. No installation or build tools are required.
