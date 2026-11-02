@@ -59,3 +59,4 @@ WebDev-L1-LandingPage/
 ## Preview
 
 Open [index.html](./index.html) in a browser to view the landing page.
+
