@@ -63,3 +63,4 @@ Calculator App/
 ├── script.js    # Input handling and arithmetic logic
 └── README.md    # Project documentation
 ```
+
