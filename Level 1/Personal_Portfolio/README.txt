@@ -38,4 +38,3 @@ CONTACT FORM
 
 The contact form opens a prefilled message in your default email application.
 It does not send information to a server.
-
