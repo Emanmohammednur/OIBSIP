@@ -7,6 +7,7 @@
   --paper: rgba(255, 255, 255, 0.79);
   --shadow: 0 28px 80px rgba(57, 92, 157, 0.12), 0 4px 18px rgba(71, 99, 150, 0.06);
 }
+
 * {
   box-sizing: border-box;
 }
