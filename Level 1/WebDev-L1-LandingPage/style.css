@@ -422,7 +422,7 @@ h1 {
 }
 
 .work .section:not(:last-child) {
-    border-right: 1px solid #3b82f6;
+    border-right: 0.5px solid #64748b;
 }
 
 .work .section:hover {
@@ -631,12 +631,13 @@ h1 {
 
 .stat {
     text-align: center;
-    border-right: 1px solid #3b82f6;
+    border-right: 0.5px solid #64748b;
     padding: clamp(24px, 3vw, 40px) 16px;
 }
 .stat:last-child {
     border-right: none;
 }
+
 .impact-number {
     font-size: clamp(32px, 4vw, 48px);
     font-weight: 700;
@@ -1064,11 +1065,11 @@ h1 {
     }
 
     .work .section:nth-child(odd) {
-        border-right: 1px solid #3b82f6;
+        border-right: 0.5px solid #64748b;
     }
 
     .work .section:nth-child(-n + 2) {
-        border-bottom: 1px solid #3b82f6;
+        border-bottom: 0.5px solid #64748b;
     }
 
     .impact_stat {
@@ -1077,11 +1078,11 @@ h1 {
 
     .stat {
         border-right: 0;
-        border-bottom: 1px solid #3b82f6;
+        border-bottom: 0.5px solid #64748b;
     }
 
     .stat:nth-child(odd) {
-        border-right: 1px solid #3b82f6;
+        border-right: 0.5px solid #64748b;
     }
 
     .stat:nth-child(n + 3) {
@@ -1274,7 +1275,7 @@ h1 {
     .work .section {
         padding: 22px 0;
         border-right: 0;
-        border-bottom: 1px solid #3b82f6;
+        border-bottom: 0.5px solid #64748b;
     }
 
     .work .section:nth-child(odd) {
@@ -1282,7 +1283,7 @@ h1 {
     }
 
     .work .section:nth-child(-n + 3) {
-        border-bottom: 1px solid #3b82f6;
+        border-bottom: 0.5px solid #64748b;
     }
 
     .work .section:last-child {
